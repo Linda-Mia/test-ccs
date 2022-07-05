@@ -1,0 +1,32 @@
+.order-form {
+    &__file {
+        visibility: hidden;
+        position: absolute;
+        opacity: 0;
+    }
+
+    &__label-file {
+        display: block;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+
+        &.input {
+            font-size: 15px;
+            padding-left: 30px;
+            background-color: var(--secondary-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        span {
+            position: relative;
+
+            &::before {
+                content: url(/images/file.svg);
+                position: absolute;
+                left: -30px;
+                top: -1px;
+            }
+        }
+    }
+}

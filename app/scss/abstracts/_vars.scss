@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #3E9CDC;
+    --main-color: #000000;
+    --secondary-color: #FFFFFF;
+    --complementary-color: #286690;
+    --additional-color: #272733;
+}
+
+%dividing-line {
+    content: url(/images/line.svg);
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: #C3C3C3;
+}

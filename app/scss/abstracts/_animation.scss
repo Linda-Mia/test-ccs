@@ -1,0 +1,93 @@
+.anim-items {
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+}
+
+.anim {
+    opacity: 1;
+    transform: translate(0, 0) !important;
+}
+
+.anim-show {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.anim-scale {
+    transform: scale(0);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.anim-scale.anim,
+.anim .anim-scale {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.anim-show.anim,
+.anim .anim-show {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.hero__list-item {
+    &.anim-show {
+        & {
+            @for $var from 1 to 12 {
+                $delay: $var * 0.2;
+
+                &:nth-child(#{$var}) {
+                    @if $var==1 {
+                        transition: transform 0.8s ease 0s;
+                    }
+
+                    @else {
+                        transition: transform 0.8s ease #{$delay + s};
+                    }
+                }
+            }
+        }
+    }
+}
+
+.work-scheme__list-item {
+    &.anim-scale {
+        & {
+            @for $var from 1 to 12 {
+                $delay: $var * 0.2;
+
+                &:nth-child(#{$var}) {
+                    @if $var==1 {
+                        transition: transform 0.8s ease 0s;
+                    }
+
+                    @else {
+                        transition: transform 0.8s ease #{$delay + s};
+                    }
+                }
+            }
+        }
+    }
+}
+
+.order-form__item {
+    &.anim-show {
+        & {
+            @for $var from 1 to 12 {
+                $delay: $var * 0.2;
+
+                &:nth-child(#{$var}) {
+                    @if $var==1 {
+                        transition: transform 1s ease 0s;
+                    }
+
+                    @else {
+                        transition: transform 1s ease #{$delay + s};
+                    }
+                }
+            }
+        }
+    }
+}

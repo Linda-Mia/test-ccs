@@ -1,0 +1,17 @@
+.header {
+    background-color: #10101DE5;
+    opacity: 90%;
+    position: fixed;
+    width: auto;
+    min-width: 100vw;
+    padding: 30px 0 30px 0;
+    max-height: 100px;
+    z-index: 99;
+
+    &__inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

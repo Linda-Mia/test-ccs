@@ -1,0 +1,36 @@
+.input:not([type=range]) {
+    border: 1px solid var(--secondary-color);
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 12px 10px;
+    font-size: 18px;
+    width: 100%;
+    transition: all 0.3s ease;
+    color: var(--additional-color);
+
+    &:focus:not(select),
+    &:valid:not(select) {
+        background-color: var(--secondary-color);
+        border: 2px solid var(--primary-color);
+    }
+
+    &:focus,
+    &:valid {
+        outline: none;
+    }
+
+    &::placeholder {
+        font-size: 18px;
+        color: var(--additional-color);
+    }
+
+    &:focus~.label,
+    &:valid~.label {
+        transform: translate(200%, 0);
+        opacity: 0;
+    }
+
+    &~.label {
+        transition: all 0.5s ease;
+    }
+}

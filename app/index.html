@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a class="logo" href="#">LOREMIPSUM.<span class="color-primary">NET</span></a>
+                    <nav class="nav">
+                        <ul class="nav-menu">
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Бизнес</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#">О нас</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Цены</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu__link" href="#">Оформить заказ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="main">
+            <section class="hero anim-items anim-no-hide">
+                <div class="container">
+                    <h1 class="hero__title anim-show"><span class="color-primary">Lorem ipsum</span> dolor sit
+                        ametconsectetur
+                        <span class="color-primary">adipiscing</span>
+                    </h1>
+                    <div class="hero__content">
+                        <p class="hero__appeal anim-show">At vero eos et accusamus et iusto odio dignissimos ducimus!
+                        </p>
+                        <ul class="hero__list anim-items anim-show">
+                            <li class="hero__list-item anim-show">Totam rem aperiam eaque ipsa</li>
+                            <li class="hero__list-item anim-show">Sit voluptatem accusantium doloremque laudantium</li>
+                            <li class="hero__list-item anim-show">Sed ut perspiciatis, unde omnis iste natus error</li>
+                        </ul>
+                        <button class="hero__btn btn btn_primary-color anim-show">Заказать</button>
+                        <a class="hero__link btn btn_secondary-color anim-show" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="order">
+                <div class="container">
+                    <h2 class="order__title">Оформление <span class="color-primary"> заказа</span></h2>
+                    <p class="order__appeal">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+                    <div class="work-scheme">
+                        <ul class="work-scheme__list anim-items anim-no-hide">
+                            <li class="work-scheme__list-item anim-scale">
+                                <div class="work-scheme__list-icon work-scheme__list-icon_1"></div>
+                                <span class="work-scheme__list-text">Lorem ipsum dolor sit amet</span>
+                            </li>
+                            <li class="work-scheme__list-item anim-scale">
+                                <div class="work-scheme__list-icon work-scheme__list-icon_2"></div>
+                                <span class="work-scheme__list-text">Сonsecteturadipiscing elit</span>
+                            </li>
+                            <li class="work-scheme__list-item anim-scale">
+                                <div class="work-scheme__list-icon work-scheme__list-icon_3"></div>
+                                <span class="work-scheme__list-text">Sed do eiusmod tempor</span>
+                            </li>
+                            <li class="work-scheme__list-item anim-scale">
+                                <div class="work-scheme__list-icon work-scheme__list-icon_4"></div>
+                                <span class="work-scheme__list-text">Esse cillum dolore eu fugiat</span>
+                            </li>
+                            <li class="work-scheme__list-item anim-scale">
+                                <div class="work-scheme__list-icon work-scheme__list-icon_5"></div>
+                                <span class="work-scheme__list-text">Excepteur sint occaecat cupidatat non
+                                    proident</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="order-form anim-items anim-no-hide" action="">
+                        <div class="order-form__item order-form__item_select anim-show">
+                            <select class="order-form__select order-form__input input" name="order-select" id="idSelect"
+                                placeholder="Выберите тип системы" required>
+                                <option value="">
+                                    </optionclass=>
+                                <option value="1">Sed ut perspiciatis</option>
+                                <option value="2">Nemo enim ipsam</option>
+                                <option value="3">Et harum quidem</option>
+                                <option value="4">Temporibus autem</option>
+                                <option value="5">Itaque earum rerum</option>
+                                <option value="6">Sed ut perspiciatis</option>
+                                <option value="7">Nemo enim ipsam</option>
+                                <option value="8">Et harum quidem</option>
+                                <option value="9">Itaque earum rerum</option>
+                                <option value="10">Temporibus autem</option>
+                                <option value="11">Et harum quidem</option>
+                            </select>
+                        </div>
+                        <div class="order-form__item order-form__item_email anim-show">
+                            <input class="order-form__email order-form__input input" id="idEmail" name="order-email"
+                                type="text" placeholder="" required>
+                            <label class="order-form__label label" for="idEmail">Ваш e-mail</label>
+                        </div>
+                        <div class="order-form__item order-form__item_name anim-show">
+                            <input class="order-form__name order-form__input input" id="idName" name="order-name"
+                                type="text" placeholder="" required>
+                            <label class="order-form__label label" for="idName">Ваше имя</label>
+                        </div>
+                        <div class="order-form__item order-form__item_range anim-show">
+                            <div class="order-form__range__text">
+                                <span>Sed ut perspiciatis, unde omnis iste natus</span>
+                                <span class="order-form__range__value" id="idRangeValue">75</span>
+                            </div>
+                            <input class="order-form__range order-form__input input" id="idRange" name="order-range"
+                                type="range" min="1" max="100" step="1" value="75" oninput="rangeValue()" required>
+                        </div>
+                        <div class="order-form__item order-form__item_file anim-show">
+                            <input class="order-form__file" id="idFile" name="order-file" type="file"
+                                data-multiple-caption="Выбрано файлов: {count}" multiple required>
+                            <label class="order-form__label-file order-form__input input" for="idFile">
+                                <span>Прикрепить файл</span>
+                            </label>
+                        </div>
+                        <div class="order-form__item order-form__item_btn anim-show">
+                            <button class="order-form__btn btn btn_primary-color">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="copyright">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
+                    <div class="payment">
+                        <ul class="payment__list">
+                            <li class="payment__list-item payment__list-item_qiwi">Qiwi wallet</li>
+                            <li class="payment__list-item payment__list-item_yandex">Yandex Money</li>
+                            <li class="payment__list-item payment__list-item_webmoney">Web Money</li>
+                        </ul>
+                    </div>
+                    <div class="contact">
+                        <a class="contact__email" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+                        <a class="contact__social" href="#">Мы вконтакте</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

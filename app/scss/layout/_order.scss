@@ -1,0 +1,22 @@
+.order {
+    padding: 150px 0;
+    background-color: var(--additional-color);
+    background-image: url(/images/order-bg.png);
+
+    &-form {
+        margin-top: 80px;
+    }
+}
+
+.order__title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+}
+
+.order__appeal {
+    text-align: center;
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 80px;
+}

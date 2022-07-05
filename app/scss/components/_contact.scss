@@ -1,0 +1,37 @@
+.contact {
+    position: relative;
+
+    &__email,
+    &__social {
+        color: var(--secondary-color);
+        padding-left: 30px;
+        margin-left: 40px;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: 0;
+        }
+    }
+
+    &::before {
+        @extend %dividing-line;
+    }
+}
+
+//Contact Icon
+.contact {
+    &__email {
+        &::before {
+            content: url(/images/ic-email.svg);
+            top: 2px;
+        }
+    }
+
+    &__social {
+        &::before {
+            content: url(/images/ic-social.svg);
+            top: 1px;
+        }
+    }
+}

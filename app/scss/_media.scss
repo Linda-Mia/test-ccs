@@ -1,0 +1,262 @@
+@media (max-width:1200px) {
+    .footer__inner {
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .payment {
+        &::before {
+            top: 26px;
+        }
+    }
+
+    .payment__list {
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-item {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width:960px) {
+    .logo {
+        font-size: 26px;
+    }
+
+    .nav-menu__item {
+        margin-left: 45px;
+    }
+
+    .hero {
+        padding: 180px 0 90px;
+
+        &__title {
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+
+        &__list {
+            margin-bottom: 50px;
+        }
+    }
+
+    .order {
+        padding: 100px 0;
+
+        &__appeal {
+            margin-bottom: 60px;
+        }
+
+        &-form {
+            margin-top: 60px;
+
+            &__label,
+            &__input:not([type=range]),
+            & .select2,
+            & .selection,
+            & .select2-container .select2-selection--single {
+                font-size: 17px;
+            }
+        }
+    }
+
+    .select2-container .select2-results__option {
+        font-size: 17px;
+    }
+
+    .work-scheme {
+        &__list-icon {
+            width: 85px;
+            height: 85px;
+        }
+
+        &__list-item {
+            &::before {
+                top: 30px;
+            }
+        }
+
+        &__list-text {
+            max-width: 150px;
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__email {
+            margin-bottom: 10px;
+        }
+    }
+
+    .contact,
+    .payment {
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (min-width:320px) and (max-width: 759px) {
+    .header {
+        max-height: 100%;
+    }
+
+    .header__inner {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .nav-menu {
+        &__item {
+            margin-left: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+
+        &__link {
+            font-size: 12px;
+        }
+    }
+
+    .hero {
+        padding: 170px 0 50px;
+        position: relative;
+        z-index: 1;
+        background-position: right;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            opacity: 0.6;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        &__title {
+            width: 100%;
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        &__content {
+            font-size: 16px;
+        }
+
+        &__list {
+            margin-bottom: 40px;
+        }
+
+        &__btn,
+        &__link {
+            width: 130px;
+            margin-right: 10px;
+        }
+
+        .btn {
+            font-size: 11px;
+        }
+    }
+
+    .order {
+        padding: 70px 0;
+
+        &__appeal {
+            font-size: 15px;
+            margin-bottom: 40px;
+        }
+
+        &__title {
+            margin-bottom: 20px;
+        }
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .work-scheme__list {
+        flex-direction: column;
+        align-items: center;
+
+        &-item {
+            width: 100%;
+            margin-bottom: 20px;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &-icon {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .order-form {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        max-width: 400px;
+        margin: 40px auto 0;
+
+        &__item {
+            grid-column: 1;
+        }
+
+        &__range__text {
+            font-size: 15px;
+        }
+
+        &__range__value {
+            margin-left: 10px;
+        }
+
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .copyright {
+        margin-right: 0;
+    }
+
+    .payment {
+        margin: 20px 0 0 0;
+
+        &__list-item {
+            margin-left: 0;
+        }
+    }
+
+    .contact {
+        margin-top: 20px;
+
+        &__email,
+        &__social {
+            margin-left: 0;
+        }
+    }
+}
